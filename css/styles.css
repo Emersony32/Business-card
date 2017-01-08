@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url("../img/bg.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Averia Gruesa Libre', cursive; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .container .target {
+    background: #fff;
+    margin: 40px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000; }
+
+.slider_banner {
+  overflow: hidden;
+  z-index: 1000;
+  position: relative; }
+  .slider_banner .banner {
+    position: relative;
+    width: 100%; }
+    .slider_banner .banner img {
+      vertical-align: top;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 100%; }
