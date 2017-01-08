@@ -32,39 +32,78 @@ $(document).ready(function(){
     n.preventDefault();
 
     if(banner.position < banner.numSlides) {
-
+      // Slides begin to the right
       banner.parent.children().not('.active').css({
         'left': '100%'
       });
 
+      // Remove active class & put next element
       $('#banner .active').removeClass('active').next().addClass('active').animate({
         'left': '0'
       });
 
+      // We animate previous slide toward left
       $('#banner .active').prev().animate({
         'left': '-100%'
       });
 
       banner.position += 1;
     } else {
-
+      // Slide active (last), toward right
       $('#banner .active').animate({
         'left': '-100%'
       });
 
+      // Select all slides that haven't active class
       banner.parent.children().not('.active').css({
         'left': '100%'
       });
 
+      // Remove active class & put first element
       $('#banner .active').removeClass('active');
       banner.parent.children('.slide').first().addClass('active').animate({
         'left': 0
       });
 
+      // Reset position to 1
       banner.position = 1;
     }
-
   });
 
-  // console.log(banner.numSlides);
+  // Button previous
+  $('#banner-prev').on('click', function(n){
+    n.preventDefault();
+
+    if (banner.position > 1) {
+
+      banner.parent.children().not('.active').css({
+        'left': '-100%'
+      });
+
+      $('#banner .active').animate({
+        'left': '100%'
+      });
+
+      $('#banner .active').removeClass('active').prev().addClass('active').animate({
+        'left': 0
+      });
+
+      banner.position -= 1;
+    } else {
+      banner.parent.children().not('.active').css({
+        'left': '-100%'
+      });
+
+      $('#banner .active').animate({
+        'left': '100%'
+      });
+
+      $('#banner .active').removeClass('active');
+      banner.parent.children().last().addClass('active').animate({
+        'left': 0
+      });
+
+      banner.position = banner.numSlides;
+    }
+  });
 });
