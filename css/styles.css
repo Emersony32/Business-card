@@ -44,3 +44,16 @@ a {
       position: absolute;
       top: 0;
       left: 100%; }
+  .slider_banner .arrow-banner {
+    font-size: 35px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    z-index: 1100; }
+    .slider_banner .arrow-banner:hover {
+      color: rgba(0, 0, 0, 0.5); }
+  .slider_banner .previous {
+    left: 20px; }
+  .slider_banner .next {
+    right: 20px; }

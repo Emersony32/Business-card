@@ -50,4 +50,21 @@ a {
       left: 100%;
     }
   }
+  .arrow-banner {
+    font-size: 35px;
+    line-height: 35px;
+    color: rgba(0,0,0,.2);
+    position: absolute;
+    top: 50%;
+    z-index: 1100;
+    &:hover {
+      color: rgba(0,0,0,.5);
+    }
+  }
+  .previous {
+    left: 20px;
+  }
+  .next {
+    right: 20px;
+  }
 }
