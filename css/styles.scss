@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Averia+Gruesa+Libre');
 
+$bg-primary: #fff;
+
+$gray: #E6E6E6;
+$dark-mild: rgba(0,0,0,.2);
+$dark-heavy: rgba(0,0,0,.5);
+$green-sp: #6ed279;
+
+$text-primary: #8d8d8d;
+$text-secondary: #55acee;
+$text-subtitle: #444;
+
+$bg-github: #BBBBBB;
+$bg-twitter: #1DA1F2;
+$bg-linkedin: #1C87BD;
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +40,7 @@ a {
   display: flex;
   align-items: center;
   .target {
-    background: #fff;
+    background: $bg-primary;
     margin: 40px 0;
     border-radius: 5px;
     overflow: hidden;
@@ -54,12 +69,12 @@ a {
   .arrow-banner {
     font-size: 35px;
     line-height: 35px;
-    color: rgba(0,0,0,.2);
+    color: $dark-mild;
     position: absolute;
     top: 50%;
     z-index: 1100;
     &:hover {
-      color: rgba(0,0,0,.5);
+      color: $dark-heavy;
     }
   }
   .previous {
@@ -86,7 +101,7 @@ a {
       overflow: hidden;
       position: relative;
       .slide {
-        background: #fff;
+        background: $bg-primary;
         width: 100%;
         left: 100%;
         position: absolute;
@@ -94,20 +109,20 @@ a {
       }
     }
     .name {
-      color: #444;
+      color: $text-subtitle;
       font-size: 38px;
       line-height: 38px;
       font-weight: 600;
       margin-bottom: 16px;
     }
     .profession {
-      color: #55acee;
+      color: $text-secondary;
       font-size: 18px;
       line-height: 18px;
       margin-bottom: 16px;
     }
     .country {
-      color: #8d8d8d;
+      color: $text-primary;
       font-size: 14px;
       line-height: 14px;
       img {
@@ -117,13 +132,13 @@ a {
       }
     }
     .subtitle {
-      color: #444;
+      color: $text-subtitle;
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 16px;
     }
     .text {
-      color: #55acee;
+      color: $text-secondary;
       font-size: 18px;
       line-height: 24px;
     }
@@ -131,12 +146,12 @@ a {
   .arrow-info {
     font-size: 35px;
     line-height: 35px;
-    color: #E6E6E6;
+    color: $gray;
     position: absolute;
     top: 50%;
     z-index: 1000;
     &:hover {
-      color: #6ed279;
+      color: $green-sp;
     }
     &.previous {
       left: 20px;
@@ -155,10 +170,10 @@ a {
       display: inline-block;
       margin: 0 10px;
       border-radius: 50%;
-      background: #E6E6E6;
+      background: $gray;
     }
     .active {
-        background: #6ed279;
+        background: $green-sp;
       }
   }
 }
@@ -174,18 +189,18 @@ a {
     line-height: 20px;
     padding: 14px 0;
     font-size: 25px;
-    color: #fff;
+    color: $bg-primary;
     background: #000;
     border-radius: 50%;
     margin: 0 10px;
   }
   .github {
-    background: #BBBBBB;
+    background: $bg-github;
   }
   .twitter {
-    background: #1DA1F2;
+    background: $bg-twitter;
   }
   .linkedin {
-    background: #1C87BD;
+    background: $bg-linkedin;
   }
 }
