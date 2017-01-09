@@ -6,9 +6,19 @@ $(document).ready(function(){
     position: 1
   }
 
+  var info = {
+    parent: $('#info'),
+    numSlides: $('#info').children('.slide').length,
+    position: 1
+  }
+
   banner.parent.children('.slide').first().css({
     'left': 0
   });
+
+  info.parent.children('.slide').first().css({
+    'left': 0
+  });  
 
   var heightBanner = function(){
     var altitude = banner.parent.children('.slide').outerHeight();
@@ -16,10 +26,18 @@ $(document).ready(function(){
     banner.parent.css({
       'height': altitude + 'px'
     });
-    console.log(altitude);
+  }
+
+  var heightInfo = function(){
+    var altitude = info.parent.children('.slide').outerHeight();
+
+    info.parent.css({
+      'height': altitude + 'px'
+    });
   }
 
   heightBanner();
+  heightInfo();
 
   $(window).resize(function() {
     heightBanner();

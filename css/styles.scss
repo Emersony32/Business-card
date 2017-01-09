@@ -30,6 +30,7 @@ a {
     border-radius: 5px;
     overflow: hidden;
     z-index: 1000;
+    width: 100%;
   }
 }
 
@@ -68,3 +69,81 @@ a {
     right: 20px;
   }
 }
+
+// Slider Info
+
+.slider_info {
+  text-align: center;
+  overflow: hidden;
+  padding: 20px 0;
+  z-index: 1000;
+  position: relative;
+  // Information section
+  .information {
+    width: 100%;
+    article {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      .slide {
+        background: #fff;
+        width: 100%;
+        left: 100%;
+        position: absolute;
+        padding: 20px 80px;
+      }
+    }
+    .name {
+      color: #444;
+      font-size: 38px;
+      line-height: 38px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .profession {
+      color: #55acee;
+      font-size: 18px;
+      line-height: 18px;
+      margin-bottom: 16px;
+    }
+    .country {
+      color: #8d8d8d;
+      font-size: 14px;
+      line-height: 14px;
+      img {
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+      }
+    }
+    .subtitle {
+      color: #444;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    .text {
+      color: #55acee;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .arrow-info {
+    font-size: 35px;
+    line-height: 35px;
+    color: #E6E6E6;
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    &:hover {
+      color: #6ed279;
+    }
+    &.previous {
+      left: 20px;
+    }
+    &.next {
+      right: 20px;
+    }
+  }
+}
+
