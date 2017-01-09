@@ -118,3 +118,36 @@ a {
       left: 20px; }
     .slider_info .arrow-info.next {
       right: 20px; }
+  .slider_info .buttons {
+    width: 100%; }
+    .slider_info .buttons span {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      margin: 0 10px;
+      border-radius: 50%;
+      background: #E6E6E6; }
+    .slider_info .buttons .active {
+      background: #6ed279; }
+
+.social_network {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0; }
+  .social_network a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 20px;
+    padding: 14px 0;
+    font-size: 25px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    margin: 0 10px; }
+  .social_network .github {
+    background: #BBBBBB; }
+  .social_network .twitter {
+    background: #1DA1F2; }
+  .social_network .linkedin {
+    background: #1C87BD; }
